@@ -17,7 +17,11 @@ p {
     color: #999;
 }
 
-h5 {
+h3 {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+h4 {
     color: #A9A9A9;
 }
 
@@ -31,10 +35,11 @@ h5 {
 
 .footerp {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
+    font-size: 0.8em;
     font-weight: 300;
     line-height: 1.7em;
     color: #999;
+    margin-bottom: 0px;
 }
 
 a, a:hover, a:focus {
@@ -209,16 +214,6 @@ a.article, a.article:hover {
     margin-top: 30px;
 }
 
-.sidebar-footer {
-    display: flex;
-    justify-content: center;
-    margin-left: 15px;
-    position: absolute;
-    bottom: 0px;
-    border-top: 2px solid #CAEBF2;
-    padding-top: 15px;
-}
-
 #content-footer-img {
     display: flex;
     justify-content: center;
@@ -233,6 +228,7 @@ a.article, a.article:hover {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-left: 2px;
 }
 
 /* ---------------------------------------------------
