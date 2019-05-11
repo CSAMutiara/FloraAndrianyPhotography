@@ -1,5 +1,5 @@
 /*
-    DEMO STYLE
+    STYLE for: about.html
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
@@ -17,7 +17,19 @@ p {
     color: #999;
 }
 
-.biop, .footerp {
+h5 {
+    color: #A9A9A9;
+}
+
+.biop {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+.footerp {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
     font-weight: 300;
@@ -50,11 +62,42 @@ a, a:hover, a:focus {
     border: none;
 }
 
+.navbar-header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .line {
     width: 100%;
     height: 1px;
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
+}
+
+i,
+span {
+    display: inline-block;
+}
+
+#bio {
+    background-color: #CAEBF2;
+    padding: 30px;
+}
+
+#testimonies {
+    padding-top: 50px;
+}
+
+.card-title {
+    text-shadow: 2px 2px grey;
+}
+
+#subtest {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 75px;
 }
 
 /* ---------------------------------------------------
@@ -176,6 +219,22 @@ a.article, a.article:hover {
     padding-top: 15px;
 }
 
+#content-footer-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    border-top: 2px solid #CAEBF2;
+    padding-top: 15px;
+    margin-left: 2px;
+    width: 100%;
+}
+
+#content-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -220,6 +279,15 @@ a.article, a.article:hover {
     margin: 5px auto;
 }
 
+
+
+/* ---------------------------------------------------
+    BOOTSTRAP OVERRIDES
+----------------------------------------------------- */
+
+.card {
+    border: none;
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES
