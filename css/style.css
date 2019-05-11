@@ -88,6 +88,8 @@ span {
 #bio {
     background-color: #CAEBF2;
     padding: 30px;
+    -moz-box-shadow: 9px 9px 23px -9px rgba(0,0,0,0.5);
+    box-shadow: 9px 9px 23px -9px rgba(0,0,0,0.5);
 }
 
 #testimonies {
@@ -283,6 +285,7 @@ a.article, a.article:hover {
 
 .card {
     border: none;
+    margin-top: 10px;
 }
 
 /* ---------------------------------------------------
