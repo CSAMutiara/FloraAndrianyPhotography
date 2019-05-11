@@ -9,6 +9,11 @@ body, html {
   box-sizing: border-box;
 }
 
+p {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
 .bg-image {
   /* Full height */
   height: 50%; 
@@ -19,7 +24,7 @@ body, html {
   background-size: cover;
 }
 
-/* Position text in the middle of the page/image */
+/* background box */
 .bg-box {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
@@ -33,7 +38,8 @@ body, html {
   z-index: 0;
 }
 
-#c1 {
+/* box contents */
+#bg-box-contents {
   display: flex;
   justify-content: center;
   position: fixed; /* Stay fixed */
@@ -44,12 +50,10 @@ body, html {
   height: 105%;
   padding: 100px;
   z-index: 0;
-  border: 1px solid black;
-  outline-style: solid;
-  outline-color: blue;
 }
 
-#r1 {
+/* logo */
+#r1, .bg-img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,40 +62,23 @@ body, html {
   margin: 0px;
   width: 90%;
   height: 30%;
-  border: 1px solid black;
-  outline-style: solid;
-  outline-color: yellow;
 }
 
-#r2 {
+/* subtitle */
+#r2, .bg-subt {
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed; /* Stay fixed */
-  top: 45%;
+  color: rgba(255, 255, 255, 0.8);
+  top: 40%;
   margin: 0px;
   width: 90%;
   height: 10%;
-  border: 1px solid black;
-  outline-style: solid;
-  outline-color: orange;
 }
 
+/* button group */
 #r3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed; /* Stay fixed */
-  top: 65%;
-  margin: 0px;
-  width: 90%;
-  height: 5%;
-  border: 1px solid black;
-  outline-style: solid;
-  outline-color: green;
-}
-
-#r4 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,24 +86,41 @@ body, html {
   top: 75%;
   margin: 0px;
   width: 90%;
-  height: 5%;
-  border: 1px solid black;
-  outline-style: solid;
-  outline-color: purple;
+  height: 15%;
 }
 
-#r5 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed; /* Stay fixed */
-  top: 85%;
+/* buttons */
+.bg-btn {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.8);
   margin: 0px;
-  width: 90%;
-  height: 5%;
-  border: 1px solid black;
-  outline-style: solid;
-  outline-color: red;
+  padding: 5px;
+}
+
+.bg-btn:hover {
+  color: #A9A9A9;
+}
+
+.wht-square {
+  margin: 20px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0);
+  padding: 10px 20px 10px 20px;
+  border: solid #ffffff 3.5px;
+}
+
+.wht-square:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -ms-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -o-linear-gradient(top, #ffffff, #ffffff);
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+  text-decoration: none;
+  opacity: .8;
 }
 
 section {
@@ -132,7 +136,7 @@ section {
   /* Position text in the middle of the page/image */
   .bg-box {
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    background-color: rgba(0,0,0, 1); /* Black w/opacity/see-through */
     position: fixed; /* Stay fixed */
     top: 50%;
     left: 50%;
@@ -142,4 +146,10 @@ section {
     padding: 100px;
     z-index: 0;
   }
+
+  p {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
 }
