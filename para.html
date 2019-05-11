@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<title>Background Image Move on Scrool</title>
-		<link rel="stylesheet" type="text/css" href="css/para.css">
-	</head>
-	<body>
-		<section>
-			<div class="bg-text">TEXT</div>
-		</section>
-		<script>
-			src="https://code.jquery.com/jquery-3.4.1.js"
-  			integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  			crossorigin="anonymous">
-		</script>
-		<script type="text/javascript">
-			$(window).scroll(function(){
-				var scroll_position = $(window).scrollTop();
-				$('section').css({
-					'background-position-x' : + scroll_position + 'px',
-				})
+<head>
+	<title>Background Image Move on Scrool</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<!-- Our Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/para.css">
+</head>
+<body>
+	<section></section>
+	<div class="row">
+		<div class="col">
+			<div class="row">
+				<img class="bg-img" src="https://static.wixstatic.com/media/bcd541_7f20f759fae547128939b98ab5ee9d1e~mv2.png">
+			</div>
+			<div class="row">
+				<div class="bg-text1">welcome  to</div>
+			</div>
+			<div class="row">
+				<a href='index.html'>
+					<div class="bg-text2">enter</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<script>
+		src="https://code.jquery.com/jquery-3.4.1.js"
+			integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			crossorigin="anonymous">
+	</script>
+	<script type="text/javascript">
+		$(window).scroll(function(){
+			var scroll_position = $(window).scrollTop();
+			$('section').css({
+				'background-position-x' : + scroll_position + 'px',
 			})
-		</script>
-	</body>
+		})
+	</script>
+</body>
 </html>
