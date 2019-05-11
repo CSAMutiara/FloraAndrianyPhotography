@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Background Image Move on Scrool</title>
+		<link rel="stylesheet" type="text/css" href="css/para.css">
+	</head>
+	<body>
+		<section>
+			<div class="bg-text">TEXT</div>
+		</section>
+		<script>
+			src="https://code.jquery.com/jquery-3.4.1.js"
+  			integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  			crossorigin="anonymous">
+		</script>
+		<script type="text/javascript">
+			$(window).scroll(function(){
+				var scroll_position = $(window).scrollTop();
+				$('section').css({
+					'background-position-x' : + scroll_position + 'px',
+				})
+			})
+		</script>
+	</body>
+</html>
