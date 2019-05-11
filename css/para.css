@@ -30,7 +30,7 @@ body, html {
 /* Position text in the middle of the page/image */
 .bg-img {
   position: fixed; /* Stay fixed */
-  top: 45%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -41,14 +41,26 @@ body, html {
 }
 
 /* Position text in the middle of the page/image */
-.bg-text1 {
+#bg-box {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: rgba(255, 255, 255, 0.55);
+  position: fixed; /* Stay fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 75%;
+  padding: 100px;
+  z-index: 0;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  color: rgba(255, 255, 255, 0.8);
   font-weight: bold;
   font-size: 40px;
   position: fixed; /* Stay fixed */
-  top: 50%;
+  top: 110%;
   left: 50%;
   letter-spacing: 3px;
   transform: translate(-50%, -50%);
@@ -60,12 +72,63 @@ body, html {
 }
 
 /* Position text in the middle of the page/image */
-.bg-text2 {
-  color: rgba(255, 255, 255, 0.9);
-  font-weight: bold;
-  font-size: 40px;
+.bg-link1 {
+  color: white;
+  font-size: 25px;
+  border: 1px solid #f1f1f1;
   position: fixed; /* Stay fixed */
-  top: 100%;
+  top: 60%;
+  left: 50%;
+  letter-spacing: 3px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 220px;
+  padding: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Position text in the middle of the page/image */
+.bg-link2 {
+  color: white;
+  font-size: 25px;
+  border: 1px solid #f1f1f1;
+  position: fixed; /* Stay fixed */
+  top: 70%;
+  left: 50%;
+  letter-spacing: 3px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 220px;
+  padding: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Position text in the middle of the page/image */
+.bg-link3 {
+  color: white;
+  font-size: 25px;
+  border: 1px solid #f1f1f1;
+  position: fixed; /* Stay fixed */
+  top: 80%;
+  left: 50%;
+  letter-spacing: 3px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 220px;
+  padding: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  font-size: 20px;
+  position: fixed; /* Stay fixed */
+  top: 75%;
   left: 50%;
   letter-spacing: 3px;
   transform: translate(-50%, -50%);
@@ -74,6 +137,7 @@ body, html {
   padding: 40px;
   text-align: center;
   z-index: 0;
+  max-width: 50%;
 }
 
 section {
