@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- SNS icons -->
+    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html">
+                    <h3><img src="https://static.wixstatic.com/media/bcd541_7f20f759fae547128939b98ab5ee9d1e~mv2.png" width="200"></h3>
+                </a>
+            </div>
+
+            <!-- Socials -->
+            <div class="row" id="sidebar-socials">
+                <a href='https://www.facebook.com/floraandrianyphotography/' target='_blank'><span class="socicon-facebook"></span></a>
+                <a href='https://www.instagram.com/floraandrianyphotography/?hl=en' target='_blank'><span class="socicon-instagram"></span></a>
+            </div>
+
+            <ul class="list-unstyled components" id="sidebar-options">
+                <li class="active">
+                    <a href="about.html">
+                        <i class="fas fa-briefcase"></i>
+                        About
+                    </a>
+                <li>
+                    <a href="galleries.html">
+                        <i class="fas fa-copy"></i>
+                        Galleries
+                    </a>
+                </li>
+                <li>
+                    <a href="book.html">
+                        <i class="fas fa-paper-plane"></i>
+                        Book
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <p>© 2019 By Ayesha Mutiara<p>
+            </div>
+
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                </div>
+            </nav>
+
+            <div class="container">
+
+                <!-- Bio -->
+                <div class="row" id="bio">
+                    <div class="col-sm-4">
+                        <img class="img-fluid" src="img/about/about1.jpg">
+                    </div>
+                    <div class="col-sm-8">
+                        <p class="biop">A mother of two who loves travelling and taking pictures.</p>
+                        <p class="biop">I have lived all over the world in countries such as the United States, Japan, Dubai, Indonesia and Thailand. For the past 6 years, I've resided in Paris, France.</p>
+                        <p class="biop">Photography is my passion. I have been doing it for more than a decade. Before Flora Andriany Photography, I previously worked under the name Oyamoto. I'm always striving to deliver my best work. I love taking portraits, family photos, travel photos, etc.</p>
+                        <p class="biop">Go to the "Book" page if you would want to have your photo taken or someone to cover the photography of your event.</p>
+                    </div>
+                </div>
+
+                <!-- Testimonies -->
+                <div class="row" id="testimonies">
+                    <div class="card-columns">
+
+                        <a href="https://www.facebook.com/pg/floraandrianyphotography/reviews/?ref=page_internal">
+                            <div class="card p-3" style="background-color: #EFEFEF;">
+                                <blockquote class="blockquote mb-0 card-body">
+                                    <p>The proof is in the images! Flora captures the moments and processes the images to perfection. Hard to believe a one of a kind professional photography service is available and (surprisingly!) affordable at our finger tips.</p>
+                                    <footer class="blockquote-footer">
+                                        <small class="text-muted">
+                                            Gnu Cou Minski's <cite title="Source Title">Facebook</cite> review
+                                        </small>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </a>
+                    
+                        <div class="card p-3 text-right">
+                            <blockquote class="blockquote mb-0">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="blockquote-footer">
+                                    <small class="text-muted">
+                                        Someone famous in <cite title="Source Title">Source Title</cite>
+                                    </small>
+                                </footer>
+                            </blockquote>
+                        </div>
+
+                        <div class="card p-3">
+                            <blockquote class="blockquote mb-0 card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="blockquote-footer">
+                                    <small class="text-muted">
+                                        Someone famous in <cite title="Source Title">Source Title</cite>
+                                    </small>
+                                </footer>
+                            </blockquote>
+                        </div>
+
+                        <a href="https://www.facebook.com/pg/floraandrianyphotography/reviews/?ref=page_internal">
+                            <div class="card p-3" style="background-color: #EFEFEF;">
+                                <blockquote class="blockquote mb-0 card-body">
+                                    <p>Its always an absolute pleasure to view your clicks! You have captured many incredibly stunning and breathtaking moments which never fail to convey the emotive stories behind them. The art that you have mastered is a true essence of your dedication and hardwork.</p>
+                                    <p>You were born to be a photographer! Keep following your passion!!!</p>
+                                    <p>I would highly recommend Flora Andriany Photography to all! She is genuinely dedicated and very prompt. Additionally, she is an amazing person who produces excellent work!</p>
+                                    <footer class="blockquote-footer">
+                                        <small class="text-muted">
+                                            Sharifah Faten Ali Albar's <cite title="Source Title">Facebook</cite> review
+                                        </small>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </a>
+
+                        <div class="card p-3 text-right">
+                            <blockquote class="blockquote mb-0">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="blockquote-footer">
+                                    <small class="text-muted">
+                                        Someone famous in <cite title="Source Title">Source Title</cite>
+                                    </small>
+                                </footer>
+                            </blockquote>
+                        </div>
+
+                        <a href="https://www.facebook.com/pg/floraandrianyphotography/reviews/?ref=page_internal">
+                            <div class="card p-3 text-right" style="background-color: #EFEFEF;">
+                                <blockquote class="blockquote mb-0">
+                                    <p>Saya mengenal Flora sejak masih SMP. smart, aktif, dan kreatif. 
+                                    ini juga terwakili dari hasil foto-fotonya sangat unik, krestif, apalagi jika foto pemandangan, hasil jepretannya bagaikan sebuah lukisan.</p>
+                                    <footer class="blockquote-footer">
+                                        <small class="text-muted">
+                                            Iay Wahyu Handayani's <cite title="Source Title">Facebook</cite> recommendation
+                                        </small>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </a>
+
+                        <a href="https://www.facebook.com/pg/floraandrianyphotography/reviews/?ref=page_internal">
+                            <div class="card p-3 text-right" style="background-color: #EFEFEF;">
+                                <blockquote class="blockquote mb-0 card-body">
+                                    <p>Flora not only takes beautiful photographs she is also a beautiful person. She recently photographed our wedding, capturing our special day and giving us visual memories to treasure for a lifetime. I am so glad we chose to work with Flora, her calm and incredibly kind presence was exactly what we wanted in a photographer. Thank you Flora for everything you have done for us.</p>
+                                    <footer class="blockquote-footer">
+                                        <small class="text-muted">
+                                            Danielle Robine's <cite title="Source Title">Facebook</cite> recommendation
+                                        </small>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </a>
+
+                        <div class="card p-3 text-right">
+                            <blockquote class="blockquote mb-0">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="blockquote-footer">
+                                    <small class="text-muted">
+                                        Someone famous in <cite title="Source Title">Source Title</cite>
+                                    </small>
+                                </footer>
+                            </blockquote>
+                        </div>
+
+                        <div class="card p-3 text-right">
+                            <blockquote class="blockquote mb-0 card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="blockquote-footer">
+                                    <small class="text-muted">
+                                        Someone famous in <cite title="Source Title">Source Title</cite>
+                                    </small>
+                                </footer>
+                            </blockquote>
+                        </div>
+
+                    </div>    
+                </div> <!-- End of Testimonies -->
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
