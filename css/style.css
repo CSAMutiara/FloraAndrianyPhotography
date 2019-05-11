@@ -23,6 +23,10 @@ a, a:hover, a:focus {
     transition: all 0.3s;
 }
 
+.fa-briefcase, .fa-copy, .fa-paper-plane{
+    margin-right: 10px;
+}
+
 .navbar {
     padding: 15px 10px;
     background: #fff;
@@ -64,6 +68,7 @@ a, a:hover, a:focus {
     color: #A9A9A9;
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: bottom left;
+    position: relative;
 }
 
 #sidebar.active {
@@ -74,11 +79,6 @@ a, a:hover, a:focus {
 #sidebar .sidebar-header {
     padding: 20px;
     background: #CAEBF2;
-}
-
-#sidebar ul.components {
-    padding: 20px 0;
-    border-bottom: 1px solid #CAEBF2;
 }
 
 #sidebar ul p {
@@ -145,6 +145,23 @@ a.article, a.article:hover {
 #sidebar-socials {
     display: flex;
     justify-content: space-around;
+    padding: 20px 0;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-top: 1px solid #CAEBF2;
+    min-width: 225px;
+    max-width: 225px;
+}
+
+#sidebar-options {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.sidebar-footer {
+    margin-left: 15px;
+    position: absolute;
+    bottom: 0px;
 }
 
 /* ---------------------------------------------------
