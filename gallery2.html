@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Young Adults Gallery: Flora Andriany Photography</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- SNS icons -->
+    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/galleries.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="welcome.html">
+                    <h3><img src="https://static.wixstatic.com/media/bcd541_7f20f759fae547128939b98ab5ee9d1e~mv2.png" width="200"></h3>
+                </a>
+            </div>
+
+            <!-- Socials -->
+            <div class="row" id="sidebar-socials">
+                <a href='https://www.facebook.com/floraandrianyphotography/' target='_blank'><span class="socicon-facebook"></span></a>
+                <a href='https://www.instagram.com/floraandrianyphotography/?hl=en' target='_blank'><span class="socicon-instagram"></span></a>
+            </div>
+
+            <ul class="list-unstyled components" id="sidebar-options">
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="fas fa-briefcase"></i>
+                        About
+                    </a>
+                <li class="active">
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Galleries
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="galleries.html">All</a>
+                        </li>
+                        <li>
+                            <a href="gallery1.html">Babies & Kids</a>
+                        </li>
+                        <li>
+                            <a href="gallery2.html">Young Adults</a>
+                        </li>
+                        <li>
+                            <a href="gallery3.html">Adults</a>
+                        </li>
+                        <li>
+                            <a href="gallery4.html">Families & Groups</a>
+                        </li>
+                        <li>
+                            <a href="gallery5.html">Studio Shoots</a>
+                        </li>
+                        <li>
+                            <a href="gallery6.html">Events</a>
+                        </li>
+                        <li>
+                            <a href="gallery7.html">Landscape</a>
+                        </li>
+                        <li>
+                            <a href="galleryp.html">Private Galleries</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="book.html">
+                        <i class="fas fa-paper-plane"></i>
+                        Book
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <div class="gallery-name">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-end">
+                                <li class="page-item">
+                                    <a class="page-link" href="gallery1.html" tabindex="-1">Previous</a>
+                                </li>
+                                <li class="page-item disabled"><h3>Young Adults</h3></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="gallery3.html">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </nav>
+
+            <div class="tabgallery">
+                <div class="row">
+
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-6" id="gallery-viewer"><!-- The expanding image container -->
+                        <div class="container">
+                        
+                          <!-- Expanded image -->
+                          <img  id="expandedImg" style="width:100%">
+
+                          <!-- Image text -->
+                          <div id="imgtext"></div>
+                        </div>
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+
+                          <!-- The Close Button -->
+                          <span class="close">&times;</span>
+
+                          <!-- Modal Content (The Image) -->
+                          <img class="modal-content" id="img01">
+
+                          <!-- Modal Caption (Image Text) -->
+                          <div id="caption"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4" id="gallery-grid">
+                        <!-- The grid: 1st column -->
+                        <div class="row grid-row">
+                          <div class="col-sm-3">
+                            <img src="img/gallery/gallery1a.jpg" class="grid-item" alt="Nature" style="width:100%" onclick="myFunction(this);">
+                          </div>
+                          <div class="col-sm-3">
+                            <img src="img/gallery/gallery1b.jpg" class="grid-item" alt="Snow" style="width:100%" onclick="myFunction(this);">
+                          </div>
+                          <div class="col-sm-3">
+                            <img src="img/gallery/gallery1c.jpg" class="grid-item" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                          </div>
+                          <div class="col-sm-3">
+                            <img src="img/gallery/gallery1d.jpg" class="grid-item" alt="Lights" style="width:100%" onclick="myFunction(this);">
+                          </div>
+                        </div>
+                        <br>
+                        <!-- The grid: 2nd column -->
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <img src="img/gallery/gallery1a.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+                          </div>
+                          <div class="col-sm-3">
+                            <img src="img/gallery/gallery1b.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+                          </div>
+                          <div class="col-sm-3">
+                            <img src="img/gallery/gallery1c.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                          </div>
+                          <div class="col-sm-3">
+                            <img src="img/gallery/gallery1d.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+                          </div>
+                        </div>
+                        <br>
+                        <!-- The grid: 3rd column -->
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <img src="img/gallery/gallery1a.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+                          </div>
+                          <div class="col-sm-3">
+                            <img src="img/gallery/gallery1b.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+                          </div>
+                          <div class="col-sm-3">
+                            <img src="img/gallery/gallery1c.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                          </div>
+                          <div class="col-sm-3">
+                            <img src="img/gallery/gallery1d.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+                          </div>
+                        </div>
+                        <br>
+                        <!-- The grid: 4th column -->
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <img src="img/gallery/gallery1a.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+                          </div>
+                          <div class="col-sm-3">
+                            <img src="img/gallery/gallery1b.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+                          </div>
+                          <div class="col-sm-3">
+                            <img src="img/gallery/gallery1c.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                          </div>
+                          <div class="col-sm-3">
+                            <img src="img/gallery/gallery1d.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="row" id="content-footer-img">   
+                <img src="https://static.wixstatic.com/media/bcd541_7f20f759fae547128939b98ab5ee9d1e~mv2.png" width="240" height="60">
+            </div>
+            <div class="row" id="content-footer">
+                <p class="footerp">© 2019 By Ayesha Mutiara</p>
+            </div>
+
+        </div> <!-- End of Content -->
+
+    </div> <!-- End of Wrapper -->
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+    <script>
+        function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          var imgText = document.getElementById("imgtext");
+          expandImg.src = imgs.src;
+          imgText.innerHTML = imgs.alt;
+          expandImg.parentElement.style.display = "block";
+        }
+    </script>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('expandedImg');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+        modal.style.display = "none";
+      }
+    </script>
+
+</body>
+
+</html>
