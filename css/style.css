@@ -1,5 +1,5 @@
 /*
-    STYLE for: about.html
+    STYLE for: index.html, about.html, book.html
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
@@ -61,7 +61,7 @@ a, a:hover, a:focus {
     transition: all 0.3s;
 }
 
-.fa-briefcase, .fa-copy, .fa-paper-plane{
+.fa-home, .fa-briefcase, .fa-copy, .fa-paper-plane{
     margin-right: 25px;
 }
 
@@ -315,6 +315,11 @@ a.article, a.article:hover {
 .card {
     border: none;
     margin-top: 10px;
+}
+
+#carouselExampleControls {
+    -moz-box-shadow: 9px 9px 23px -9px rgba(0,0,0,0.5);
+    box-shadow: 9px 9px 23px -9px rgba(0,0,0,0.5);
 }
 
 /* ---------------------------------------------------
