@@ -1,85 +1,156 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
 
-<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home: Flora Andriany Photography</title>
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-        <!-- Our Custom CSS -->
-        <link rel="stylesheet" type="text/css" href="css/welcome.css">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- SNS icons -->
+    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
-        <title>Welcome to Flora Andriany Photography</title>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
         
-    </head>
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html">
+                    <h3><img src="https://static.wixstatic.com/media/bcd541_7f20f759fae547128939b98ab5ee9d1e~mv2.png" width="200"></h3>
+                </a>
+            </div>
 
-    <body>
+            <!-- Socials -->
+            <div class="row" id="sidebar-socials">
+                <a href='https://www.facebook.com/floraandrianyphotography/' target='_blank'><span class="socicon-facebook"></span></a>
+                <a href='https://www.instagram.com/floraandrianyphotography/?hl=en' target='_blank'><span class="socicon-instagram"></span></a>
+            </div>
 
-        <!-- Background -->
-        <section></section>
+            <ul class="list-unstyled components" id="sidebar-options">
+                <li class="active">
+                    <a href="index.html">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="fas fa-briefcase"></i>
+                        About
+                    </a>
+                <li>
+                    <a href="galleries.html">
+                        <i class="fas fa-copy"></i>
+                        Galleries
+                    </a>
+                </li>
+                <li>
+                    <a href="book.html">
+                        <i class="fas fa-paper-plane"></i>
+                        Book
+                    </a>
+                </li>
+            </ul>
 
-        <!-- Welcome Message -->
-        <div class="row">
-            <div class="bg-box">
-                <div class="col" id="bg-box-contents">
+        </nav>
 
-                    <!-- Logo & Substitle-->
-                    <div class="row" id="r1">
-                        <img class="bg-img" src="https://static.wixstatic.com/media/bcd541_7f20f759fae547128939b98ab5ee9d1e~mv2.png">
-                    </div>
-                    <div class="row" id="r2">
-                        <p class="bg-subt">Photographer based in Paris</p>
-                    </div>
+        <!-- Page Content Holder -->
+        <div id="content">
 
-                    <!-- Button links -->
-                    <div class="row" id="r3">
-                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                            <div class="btn-group mr-2" role="group" aria-label="First group">
-                                <a href="index.html" class="wht-square">
-                                    <p class="bg-btn">portfolio</p>
-                                </a>
-                            </div>
-                            <div class="btn-group mr-2" role="group" aria-label="Second group">
-                                <a href="https://www.instagram.com/floraandrianyphotography/?hl=en" class="wht-square">
-                                    <p class="bg-btn">instagram</p>
-                                </a>
-                            </div>
-                            <div class="btn-group" role="group" aria-label="Third group">
-                                <a href="mailto:flora.andriany@outlook.com" class="wht-square">
-                                    <p class="bg-btn">email</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Button links -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
 
                 </div>
+            </nav>
+            
+            <!-- Recent photos carousel -->
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/home/home1.jpg" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="carousel-cptn">Paris Landscape</h1>
+                            <h4 class="carousel-cptn">Most Recent Photos</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/home/home2.jpg" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="carousel-cptn">Bridge in Japan</h1>
+                            <h4 class="carousel-cptn">Most Recent Photos</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/home/home3.jpg" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="carousel-cptn">Couple Shoot in Paris</h1>
+                            <h4 class="carousel-cptn">Most Recent Photos</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/home/home4.jpg" alt="Fourth slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="carousel-cptn">Couple Shoot in Paris</h1>
+                            <h4 class="carousel-cptn">Most Recent Photos</h4>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-        </div>
 
-        <!-- Background Scrolling JS -->
-        <script>
-            src="https://code.jquery.com/jquery-3.4.1.js"
-                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-                crossorigin="anonymous">
-        </script>
-        <script type="text/javascript">
-            $(window).scroll(function(){
-                var scroll_position = $(window).scrollTop();
-                $('section').css({
-                    'background-position-x' : + scroll_position + 'px',
-                })
-            })
-        </script>
+            <!-- Footer -->
+            <div class="row" id="content-footer-img">   
+                <img src="https://static.wixstatic.com/media/bcd541_7f20f759fae547128939b98ab5ee9d1e~mv2.png" width="240" height="60">
+            </div>
+            <div class="row" id="content-footer">
+                <p class="footerp">© 2019 By Ayesha Mutiara</p>
+            </div>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+        </div> <!-- End of Content -->
+
+    </div> <!-- End of Wrapper -->
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
 
 </html>
