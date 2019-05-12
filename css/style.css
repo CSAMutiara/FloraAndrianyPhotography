@@ -134,6 +134,11 @@ span {
     justify-content: space-between;
 }
 
+.carousel-cptn {
+    color: white;
+    text-shadow: 2px 2px grey;
+}
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
