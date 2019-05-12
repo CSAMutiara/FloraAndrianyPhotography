@@ -17,15 +17,28 @@ p {
     color: #999;
 }
 
+small {
+    font-family: 'Poppins', sans-serif;
+    font-size: .75em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #999;
+
+}
+
 h3 {
     color: rgba(0, 0, 0, 0.5);
 }
 
-h4 {
+#h3-resize {
+    padding: 10px;
+}
+
+h4,h5 {
     color: #A9A9A9;
 }
 
-.biop {
+.biop, .instrp, .subp {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
     font-weight: 300;
@@ -85,7 +98,7 @@ span {
     display: inline-block;
 }
 
-#bio {
+#bio, #form {
     background-color: #CAEBF2;
     padding: 30px;
     -moz-box-shadow: 9px 9px 23px -9px rgba(0,0,0,0.5);
@@ -105,6 +118,20 @@ span {
     justify-content: center;
     width: 100%;
     margin-top: 75px;
+}
+
+#instructions {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+
+#form-btns {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* ---------------------------------------------------
@@ -322,4 +349,70 @@ a.article, a.article:hover {
         transform: rotate(-45deg) translate(1px, -1px);
     }
 
+}
+
+
+@media (max-width: 1300px) {
+    #h3-resize {
+        width: 60%;
+    }
+
+    .subp {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1em;
+        font-weight: 300;
+        line-height: 1.7em;
+        color: #999;
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #h3-resize {
+        width: 75%;
+    }
+
+    #subtest {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 75px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 819px) {
+    #h3-resize {
+        width: 75%;
+    }
+
+    #subtest {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 75px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    #h3-resize {
+        width: 75%;
+    }
+}
+
+@media (max-width: 575px) {
+    #h3-resize {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 90%;
+    }
+
+    #subtest {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 75px;
+        margin-left: 10px;
+    }
 }
